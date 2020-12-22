@@ -1,9 +1,13 @@
-from django.shortcuts import render
-from django.views.generic import ListView
+from rest_framework import generics
 from .models import Article
+from .serializers import ArticleSerializer, DetailSerializer
 
 
-class ArticlesView(ListView):
-    """Список статей"""
-    model = Article
-    template_name = 'article_list.html'
+class ArticleAPIView(generics.ListAPIView):
+    queryset = Article.objects.all()
+    serializer_class = ArticleSerializer
+
+
+class DetailAPIView(generics.RetrieveAPIView):
+    queryset = Article.objects.all()
+    serializer_class = DetailSerializer
