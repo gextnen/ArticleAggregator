@@ -8,7 +8,7 @@ Erlang/OTP, RabbitMQ
 
 Если у вас Windows:
 
-Необходимо  установить RabbitMQ в папку: ..\erl-23.2\lib : https://www.erlang.org/downloads
+Необходимо  установить RabbitMQ в папку: ..\erl-23.2\lib : https://www.rabbitmq.com/download.html
 
 Если у вас другая ОС, инструкцию по установке можете посмотреть по вышеуказанным ссылкам.
 
