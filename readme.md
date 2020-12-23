@@ -4,8 +4,6 @@ Restful приложение, которое является агрегатор
 # Вам понадобиться
 Erlang/OTP, RabbitMQ  
 
-Если у вас Windows:
-
 Необходимо скачать Erlang: https://www.erlang.org/downloads
 
 Если у вас Windows:
