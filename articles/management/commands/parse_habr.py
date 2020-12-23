@@ -12,6 +12,12 @@ from django.core.management import BaseCommand
 logger = logging.getLogger(__name__)
 
 
+def celery_handle():
+    """function that parses habr everyday"""
+    test_parser = HabrParser()
+    test_parser.parse_all()
+
+
 class HabrParser:
     def __init__(self):
         self.session = requests.Session()

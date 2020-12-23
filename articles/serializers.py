@@ -4,7 +4,7 @@ from articles.models import Article
 
 
 class ArticleSerializer(serializers.ModelSerializer):
-    """ List of articles"""
+    """ Serializer for list of articles"""
     content = serializers.SerializerMethodField()
 
     @staticmethod
@@ -17,7 +17,7 @@ class ArticleSerializer(serializers.ModelSerializer):
 
 
 class DetailSerializer(serializers.ModelSerializer):
-    """ """
+    """Serializer for one article"""
 
     class Meta:
         model = Article
