@@ -20,12 +20,9 @@ Erlang/OTP, RabbitMQ
 2. celery -A ArticleAggregator worker  -l info
 3. celery -A ArticleAggregator beat  -l info
 
-Также вам понадобиться некоторые библиотеки:
-1. pip install djangorestframework
-2. pip install bs4
-3. pip install requests
-4. pip install celery
-5. pip install Django
+Также вам понадобиться некоторые библиотеки, для их установки необходимо:
+pip install -r requirements.txt
+
 
 Убедитесь, что вы находитесь в нужной дирректории, а также проверьте наличие необходимых библиотек.
 
