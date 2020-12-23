@@ -15,7 +15,7 @@ Erlang/OTP, RabbitMQ
 # Настройка
 Запустите RabbitMQ Service start.
 
-После запуска, необходимо в терминале программы в трех разных сессиях ввести следующие команды:
+Запустите проект. После запуска, необходимо в терминале программы в трех разных сессиях ввести следующие команды:
 1. python manage.py runserver 
 2. celery -A ArticleAggregator worker  -l info
 3. celery -A ArticleAggregator beat  -l info
