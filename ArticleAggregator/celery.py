@@ -18,8 +18,7 @@ timezone = 'Europe/Moscow'
 app.conf.beat_schedule = {
     'parse-everyday': {
         'task': 'articles.tasks.parse_habr_everyday',
-        'schedule': crontab(hour=21, minute=50),
-\
+        'schedule': crontab(hour=10, minute=0),
         'args': ()
     }
 }
